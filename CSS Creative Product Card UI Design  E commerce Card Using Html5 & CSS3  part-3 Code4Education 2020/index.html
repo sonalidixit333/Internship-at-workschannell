@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Creative Product Card UI Design  E commerce Card Using Html5 & CSS3  Code4Education 2020</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="single-item">
+     <div class="left-set">
+       <img src="images/beat-white.png" alt="">
+       <img src="images/beat-red.png" alt="">
+     </div>
+     <div class="right-set"> 
+       <div class="subname">Beats Wireless headphones</div>
+        <div class="price">$349.95</div>
+        <div class="description">
+          <p>Pure Adaptive Noise Canceling (Pure ANC) blocks out distractions, so you can get closer to your music.</p>
+        </div>
+        <div class="color">
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <button>Add to CART</button>
+      </div>
+   </div>
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $("ul li:nth-child(1)").click(function(){
+          $(".left-set img:nth-child(2)").animate({
+            opacity:1
+          })
+        })
+        $("ul li:nth-child(2)").click(function(){
+          $(".left-set img:nth-child(2)").animate({
+            opacity:0
+          })
+        })
+    </script>
+</body>
+</html>

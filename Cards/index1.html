@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-1" data-whatever="@mdo">Assign Task</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@fat"> Sign In</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-3" data-whatever="@getbootstrap">Add Expense</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-4" data-whatever="@getbootstrap">Upload documents</button>
+
+<div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Assign task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Taskname:</label>
+                <input type="text" class="form-control" id="message-text">
+              </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">DeadLine:</label>
+            <input type="text" class="form-control" id="message-text">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Comments:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In Take</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="date" class="col-form-label">Date:</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+      <div class="form-group">
+        <label for="time" class="col-form-label">Time:</label>
+        <input type="time" class="form-control" id="time">
+      </div>
+      <div class="form-group">
+        <label for="message-text" class="col-form-label">Comments:</label>
+        <textarea class="form-control" id="message-text"></textarea>
+      </div>
+    </form>
+  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sign In</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Expense</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Expense Name:</label>
+            <input type="text" class="form-control" id="message-text">
+          </div>
+          <div class="form-group">
+            <label for="date" class="col-form-label">Date:</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+      
+      <div class="form-group">
+        <label for="amount" class="col-form-label">Amount:</label>
+        <input type="text" class="form-control" id="number">
+      </div>
+      <div class="form-group">
+        <label for="message-text" class="col-form-label">Comments:</label>
+        <textarea class="form-control" id="message-text"></textarea>
+      </div>
+    </form>
+  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add Expense</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Upload Documents</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="md-form">
+        <div class="file-field big">
+          <a class="btn-floating btn-lg pink lighten-1 mt-0 float-left">
+            <i class="fas fa-paperclip" aria-hidden="true"></i>
+            <input type="file" multiple>
+          </a>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+          </div>
+        </div>
+      </form>
+      <form class="md-form">
+        <div class="file-field big">
+          <a class="btn-floating btn-lg cyan darken-2 mt-0 float-left">
+            <i class="far fa-heart" aria-hidden="true"></i>
+            <input type="file" multiple>
+          </a>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+          </div>
+      </div>
+      </form>
+      <form class="md-form">
+        <div class="file-field big">
+          <a class="btn-floating btn-lg amber darken-2 mt-0 float-left">
+            <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+            <input type="file" multiple>
+          </a>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+          </div>
+        </div>
+      </form>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+

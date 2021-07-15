@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e8e8e8;
+}
+
+h3 {
+  margin: 0;
+  color: white;
+}
+
+h6 {
+  text-decoration: none;
+  color: #ffffdd;
+  font-size: 0.7rem;
+  padding-top: 6px;
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-style: italic;
+  margin: 0;
+}
+
+.end {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+hr {
+  color: white;
+  background-color: white;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+p {
+  text-decoration: none;
+  color: wheat;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.task-card {
+  box-shadow: 3px 3px lightblue;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 22rem;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  padding: 1.5rem 1rem;
+}
+
+.month {
+  color: #a6dcef;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.date {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.deadline {
+  text-align: center;
+}
